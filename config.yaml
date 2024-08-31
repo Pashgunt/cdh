@@ -1,0 +1,26 @@
+name: go-dir
+file: .dirhistory
+storage: 100
+home: /
+error:
+  currentDir:
+    en: Error getting the current directory
+    ru: Ошибка получения текущей директории
+  addDirToHistory:
+    en: Error adding a directory to the history
+    ru: Ошибка добавления директории в историю
+  historyList:
+    en: History output error
+    ru: Ошибка вывода истории
+  dirIndex:
+    en: Specify the directory index
+    ru: Укажите индекс директории
+  incorrectDirIndex:
+    en: Invalid index
+    ru: Неверный индекс
+  getDir:
+    en: Directory Acquisition Error
+    ru: Ошибка получения директории
+  clearHistory:
+    en: Error clearing history
+    ru: Ошибка очистки истории
