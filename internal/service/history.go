@@ -2,8 +2,8 @@ package service
 
 import (
 	"bufio"
-	"dir/internal/config"
-	"dir/internal/helper"
+	"github.com/Pashgunt/cdh/internal/config"
+	"github.com/Pashgunt/cdh/internal/helper"
 	"os"
 	"strings"
 )

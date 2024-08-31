@@ -1,8 +1,8 @@
 package service
 
 import (
-	"dir/internal/config"
 	"fmt"
+	"github.com/Pashgunt/cdh/internal/config"
 )
 
 type DirContract interface {

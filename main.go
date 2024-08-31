@@ -1,10 +1,10 @@
 package main
 
 import (
-	"dir/internal/config"
-	"dir/internal/helper"
-	"dir/internal/service"
 	_ "embed"
+	"github.com/Pashgunt/cdh/internal/config"
+	"github.com/Pashgunt/cdh/internal/helper"
+	"github.com/Pashgunt/cdh/internal/service"
 	"gopkg.in/yaml.v2"
 	"os"
 )

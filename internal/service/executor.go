@@ -1,9 +1,9 @@
 package service
 
 import (
-	"dir/internal/config"
-	"dir/internal/helper"
 	"fmt"
+	"github.com/Pashgunt/cdh/internal/config"
+	"github.com/Pashgunt/cdh/internal/helper"
 	"os"
 	"strconv"
 )

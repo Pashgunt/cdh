@@ -1,4 +1,4 @@
-module dir
+module github.com/Pashgunt/cdh
 
 go 1.23.0
 

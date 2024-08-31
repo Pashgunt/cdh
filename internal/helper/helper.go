@@ -1,8 +1,8 @@
 package helper
 
 import (
-	"dir/internal/config"
 	"fmt"
+	"github.com/Pashgunt/cdh/internal/config"
 	"os"
 	"path/filepath"
 )
