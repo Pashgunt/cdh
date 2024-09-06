@@ -1,8 +1,11 @@
 package service
 
 import (
+	"errors"
 	"fmt"
 	"github.com/Pashgunt/cdh/internal/config"
+	"os"
+	"path/filepath"
 )
 
 type DirContract interface {
@@ -24,6 +27,10 @@ func (d *Dir) AddDir(dir string) error {
 	history, err := d.history.ReadHistory()
 
 	if err != nil {
+		return err
+	}
+
+	if err = d.checkCorrectDir(dir); err != nil {
 		return err
 	}
 
@@ -62,6 +69,18 @@ func (d *Dir) GetDir(index int) error {
 	}
 
 	fmt.Print(history[index])
+
+	return nil
+}
+
+func (d *Dir) checkCorrectDir(dir string) error {
+	if _, err := os.Stat(dir); err != nil {
+		return errors.New(fmt.Sprintf("%s - is noat a correct path", dir))
+	}
+
+	if _, err := filepath.Abs(dir); err != nil {
+		return errors.New(fmt.Sprintf("%s - is noat a correct path", dir))
+	}
 
 	return nil
 }
